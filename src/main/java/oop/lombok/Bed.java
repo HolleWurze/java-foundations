@@ -11,4 +11,4 @@ public class Bed {
     private String treeFromWhichItIsMade;
     private String bedDimensions;
 
-    }
+}

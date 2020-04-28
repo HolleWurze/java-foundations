@@ -7,7 +7,7 @@ public class Runner {
         ironGeorge.setColor("Green");
         System.out.println("ironGeorge.getColor() = " + ironGeorge.getColor());
 
-        Bed bedGeorge = new Bed("Бук","210х200");
+        Bed bedGeorge = new Bed("Бук", "210х200");
         System.out.println("Размеры кровати, которые хотел: " + bedGeorge.getBedDimensions());
         System.out.println("Из дерева, которое хотел: " + bedGeorge.getTreeFromWhichItIsMade());
         bedGeorge.setBedDimensions("250x300");
@@ -16,7 +16,7 @@ public class Runner {
         System.out.println("И не из того дерева: " + bedGeorge.getTreeFromWhichItIsMade());
 
 
-        Shop shopGeorge = new Shop("Мвидео","Электроника, девайсы");
+        Shop shopGeorge = new Shop("Мвидео", "Электроника, девайсы");
         System.out.println("Магазин, в который хотел пойти: " + shopGeorge.getTitleShop());
         System.out.println("Который торгует: " + shopGeorge.getShopSpecialization());
         shopGeorge.setTitleShop("ВкусВилл");
@@ -24,7 +24,7 @@ public class Runner {
         System.out.println("Но заблудился и попал во: " + shopGeorge.getTitleShop());
         System.out.println("И не купил себе девайсов, а " + shopGeorge.getShopSpecialization());
 
-        Telephone telephoneGeorge = new Telephone("Huawei","8", "6,5");
+        Telephone telephoneGeorge = new Telephone("Huawei", "8", "6,5");
         System.out.println("Телефон, который хотел купить: " + telephoneGeorge.getModelTelephone());
         System.out.println("Который имеет " + telephoneGeorge.getAmountOfMemory() + "Гб оперативной памяти");
         System.out.println("И диагональ экрана у него аж: " + telephoneGeorge.getDiagonalOfScreen());
@@ -40,7 +40,7 @@ public class Runner {
         flowerGeorge.setColorOfFlower("Синий");
         System.out.println("Но все почему-то говорят, что цветок: " + flowerGeorge.getColorOfFlower());
 
-        Cow georgeCow = new Cow("Монбельярдская","Рыжий");
+        Cow georgeCow = new Cow("Монбельярдская", "Рыжий");
         System.out.println("Корову, которую нашел: " + georgeCow.getNameBreed());
         System.out.println("Которая цвета " + georgeCow.getColor());
         georgeCow.setNameBreed("Костромская");
@@ -48,7 +48,7 @@ public class Runner {
         System.out.println("Оказалось, порода ее: " + georgeCow.getNameBreed());
         System.out.println("Да и цвет у нее: " + georgeCow.getColor());
 
-        Cup georgeCup = new Cup("30","1500 мл.");
+        Cup georgeCup = new Cup("30", "1500 мл.");
         System.out.println("На столе стояла чашка и радиус казалось у нее = " + georgeCup.getRadiusCup());
         System.out.println("А объем чашки я думал " + georgeCup.getVolumeCup());
         georgeCup.setRadiusCup("15");

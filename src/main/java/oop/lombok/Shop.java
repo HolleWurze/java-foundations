@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @Getter
 
+
 public class Shop {
     private String titleShop;
     private String shopSpecialization;

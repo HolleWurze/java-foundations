@@ -1,15 +1,17 @@
 package oop.lombok;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
-@AllArgsConstructor
-@Setter
 @Getter
+public class Man extends Person {
+    private String age;
 
-public class Man {
-    private String nameMan;
-    private String languageMan;
-
+    public Man(String isMale, String age, String name) {
+        System.out.println("Имя мужчины: " + name);
+        System.out.println(isMale);
+        this.age = age;
+    }
+    public void printAge() {
+        System.out.println(age);
+    }
 }

@@ -11,8 +11,6 @@ public class Person {
     private String name;
     private String age;
 
-
-
     public void male() {
         if (isMan) {
             System.out.println("Мужчина");
@@ -23,7 +21,4 @@ public class Person {
     public void printAge() {
         System.out.println(age);
     }
-
-
-
 }

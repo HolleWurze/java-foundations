@@ -16,4 +16,3 @@ import lombok.Getter;
             System.out.println("всегда 18");
         }
     }
-

@@ -3,6 +3,7 @@ package oop.lombok;
 import lombok.Getter;
 
 @Getter
+
 public class Man extends Person {
     private String age;
 

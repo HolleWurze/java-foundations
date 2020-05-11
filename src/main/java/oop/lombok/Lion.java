@@ -1,6 +1,4 @@
 package oop.lombok;
 
-public class Lion extends Cat {
-
-}
+public class Lion extends Cat {}
 

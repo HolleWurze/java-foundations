@@ -5,6 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
+
 public class Person {
     protected boolean isMan = true;
     private String isMale;

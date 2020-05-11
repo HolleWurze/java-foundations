@@ -2,6 +2,7 @@ package oop.lombok;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class RunnerHW1 {
     public static void main(String[] args) {
@@ -39,13 +40,21 @@ public class RunnerHW1 {
         //4. Иерархия Фигур
 //Фигура, Треугольник, Прямоугольник, Квадрат
 //определить методы вычисления площади и периметра в фигуре
-        Figure triangle = new Triangle();
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("\nside1 = ");
+        double side1 = scan.nextInt();
+        System.out.print("side2 = ");
+        double side2 = scan.nextInt();
+        System.out.print("side3 = ");
+        double side3 = scan.nextInt();
+        Figure triangle = new Triangle(side1, side2, side3);
         triangle.getPerimeter();
         triangle.getArea();
-        Figure rectangle = new Rectangle();
+        Figure rectangle = new Rectangle(side1, side2);
         rectangle.getArea();
         rectangle.getPerimeter();
-        Figure square = new Square();
+        Figure square = new Square(side1);
         square.getPerimeter();
         square.getArea();
     }

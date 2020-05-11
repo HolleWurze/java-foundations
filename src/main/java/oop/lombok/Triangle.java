@@ -1,26 +1,21 @@
 package oop.lombok;
 
-import java.util.Scanner;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 
 public class Triangle extends Figure {
-    private double side1;
-    private double side2;
-    private double side3;
 
-    public Triangle() {
-
+    public Triangle(double side1, double side2, double side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
     }
 
     public void getArea() {
-        System.err.println("\nВычисление площади треугольника - ");
-        System.out.println("Введите значения сторон треугольника: ");
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nside1 = ");
-        double side1 = scan.nextInt();
-        System.out.print("side2 = ");
-        double side2 = scan.nextInt();
-        System.out.print("side3 = ");
-        double side3 = scan.nextInt();
+        System.err.println("\nВычисление площади треугольника: ");
         if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1) {
             System.err.println("Эти стороны не образуют треугольника, площадь не посчитать");
 //                System.exit(0);
@@ -32,15 +27,8 @@ public class Triangle extends Figure {
     }
 
     public void getPerimeter() {
-        System.err.println("\nВычисление периметра треугольника - ");
-        System.out.println("Введите значения сторон треугольника: ");
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nside1 = ");
-        double side1 = scan.nextInt();
-        System.out.print("side2 = ");
-        double side2 = scan.nextInt();
-        System.out.print("side3 = ");
-        double side3 = scan.nextInt();
+        System.err.println("\nВычисление периметра треугольника: ");
+
         if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1) {
             System.err.println("Эти стороны не образуют треугольника, периметр не посчитать");
 //                System.exit(0);

@@ -1,9 +1,10 @@
 package oop.lombok;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
-
+@Setter
 public class Man extends Person {
     private String age;
 

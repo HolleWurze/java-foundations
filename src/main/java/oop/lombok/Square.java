@@ -1,28 +1,26 @@
 package oop.lombok;
 
-import java.util.Scanner;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Square extends Figure {
-    private double side1;
+
+    public Square(double side1) {
+        this.side1 = side1;
+    }
 
     public void getArea() {
-        System.err.println("\nВычисление площади квадрата - ");
-        System.out.println("Введите значения сторон квадрата: ");
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nside1 = ");
-        double side1 = scan.nextInt();
+        System.err.println("\nВычисление площади квадрата: ");
         double area = Math.pow(side1, 2);
-        System.out.println("Площадь квадрата = ");
+        System.out.println("Площадь квадрата = " + area);
     }
 
     public void getPerimeter() {
-        System.err.println("\nВычисление периметра квадрата - ");
-        System.out.println("Введите значения сторон квадрата: ");
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nside1 = ");
-        double side1 = scan.nextInt();
+        System.err.println("\nВычисление периметра квадрата: ");
         double perim = 4 * side1;
-        System.out.println("Периметр квадрата = ");
+        System.out.println("Периметр квадрата = " + perim);
 
     }
 }

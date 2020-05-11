@@ -1,10 +1,5 @@
 package oop.lombok;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class Figure {
     double side1;
     double side2;

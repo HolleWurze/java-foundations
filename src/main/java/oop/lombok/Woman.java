@@ -10,7 +10,6 @@ import lombok.Getter;
             super.isMan = false;
             System.out.println("Имя женщины: " + name);
             System.out.println(isMale);
-
         }
         public void printAge() {
             System.out.println("всегда 18");

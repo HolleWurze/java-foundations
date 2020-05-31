@@ -1,4 +1,4 @@
-package oop.lombok;
+package oop.lombok.hwoop2;
 
 import lombok.Getter;
 

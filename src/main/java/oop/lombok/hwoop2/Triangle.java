@@ -1,4 +1,4 @@
-package oop.lombok;
+package oop.lombok.hwoop2;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +7,9 @@ import lombok.Setter;
 @Setter
 
 public class Triangle extends Figure {
+    double side1;
+    double side2;
+    double side3;
 
     public Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
@@ -15,7 +18,7 @@ public class Triangle extends Figure {
     }
 
     public void getArea() {
-        System.err.println("\nВычисление площади треугольника: ");
+        System.out.println("Вычисление площади треугольника: ");
         if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1) {
             System.err.println("Эти стороны не образуют треугольника, площадь не посчитать");
 //                System.exit(0);
@@ -27,7 +30,7 @@ public class Triangle extends Figure {
     }
 
     public void getPerimeter() {
-        System.err.println("\nВычисление периметра треугольника: ");
+        System.out.println("Вычисление периметра треугольника: ");
 
         if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1) {
             System.err.println("Эти стороны не образуют треугольника, периметр не посчитать");
@@ -36,5 +39,10 @@ public class Triangle extends Figure {
             double perim = side1 + side2 + side3;
             System.out.println("Периметр фигуры = " + perim);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "\nСтороны треугольника {" + side1 + " " + side2 + " " + side3 + "}";
     }
 }

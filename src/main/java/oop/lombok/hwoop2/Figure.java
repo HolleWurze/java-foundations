@@ -1,9 +1,7 @@
-package oop.lombok;
+package oop.lombok.hwoop2;
 
 public class Figure {
-    double side1;
-    double side2;
-    double side3;
+
 
     public void getArea() {
     }

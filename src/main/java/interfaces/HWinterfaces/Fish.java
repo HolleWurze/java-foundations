@@ -3,7 +3,7 @@ package interfaces.HWinterfaces;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Fish implements Swimable{
+public class Fish implements Swimable {
 
 
     @Override

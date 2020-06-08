@@ -3,7 +3,7 @@ package interfaces.HWinterfaces;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Dog implements Walkable,Runnable,Swimable{
+public class Dog implements Walkable, Runnable, Swimable {
     @Override
     public void walk() {
         System.out.println("Я гуляю на четырех лапах и только с хозяином!");

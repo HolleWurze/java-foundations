@@ -3,7 +3,7 @@ package interfaces.HWinterfaces;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Bird implements Flyable{
+public class Bird implements Flyable {
 
     @Override
     public void fly() {
@@ -12,6 +12,6 @@ public class Bird implements Flyable{
 
     @Override
     public String sing() {
-      return "Фить-фить-фить";
+        return "Фить-фить-фить";
     }
 }

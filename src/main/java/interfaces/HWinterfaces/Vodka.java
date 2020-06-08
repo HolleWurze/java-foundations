@@ -3,14 +3,16 @@ package interfaces.HWinterfaces;
 public class Vodka {
     private String name;
     private int volume;
-//конструкторы
+
+    //конструкторы
     public Vodka() {
     }
 
     public Vodka(String name) {
         this.name = name;
     }
-//методы
+
+    //методы
     public void drinkTooMuch() {
     }
 

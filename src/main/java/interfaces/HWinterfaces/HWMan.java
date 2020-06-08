@@ -34,10 +34,11 @@ public class HWMan implements Walkable, Runnable, Swimable {
 
     public static int age;
 
-    public HWMan( int age, String name) {
+    public HWMan(int age, String name) {
         System.out.println("Имя мужчины: " + name);
         HWMan.age = age;
     }
+
     public void printAge() {
         System.out.println(age);
     }

@@ -3,7 +3,7 @@ package interfaces.HWinterfaces;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Cat implements Runnable,Swimable,Walkable{
+public class Cat implements Runnable, Swimable, Walkable {
     @Override
     public void run() {
         System.out.println("Я очень юркая!");

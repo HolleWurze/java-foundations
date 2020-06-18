@@ -34,6 +34,7 @@ public class Party {
         party.add(nubagbva);
 
         System.out.println(linda.toString());
+        System.out.println(frank.toString());
 
         for (int i = 0; i < party.size(); i++) {
             if (party.get(i).getAge() < 18) {
@@ -41,8 +42,10 @@ public class Party {
             }
         }
         for (int i = 0; i < party.size(); i++) {
-            if (party.get(i).getName() != "Люба") {
+            if (!(party.get(i).getName().equals("Люба"))) {
                 System.out.println("Добро пожаловать, " + party.get(i).getName());
+            } else {
+                System.out.println("Эта тусовка не для тебя " + party.get(i).getName());
             }
         }
 

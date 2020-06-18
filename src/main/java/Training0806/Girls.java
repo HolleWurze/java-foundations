@@ -16,13 +16,8 @@ public class Girls extends Person {
         this.age = age;
     }
 
-
-    public static String toString(String name) {
-        return name + "подожди, мне нужно накраситься!";
-    }
-
     @Override
     public String toString() {
-        return name + " " + surname + " " + age;
+        return name + " - подожди, мне нужно накраситься!";
     }
 }

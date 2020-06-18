@@ -9,7 +9,7 @@ import lombok.Setter;
 
 
 public class Friends extends Person {
-    private String name;
+    private final String name;
     private String surname;
     public int age;
 
@@ -19,13 +19,9 @@ public class Friends extends Person {
         this.age = age;
     }
 
-    public static String toString(String name) {
-        return name + "Погнали мужики!";
-    }
-
     @Override
     public String toString() {
-        return name + " " + surname + " " + age;
+        return name + " - погнали мужики!";
     }
 
 }

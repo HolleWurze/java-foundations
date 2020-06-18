@@ -1,12 +1,10 @@
 package Training0806;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-
 
 public class Friends extends Person {
     private final String name;

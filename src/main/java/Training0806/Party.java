@@ -41,6 +41,7 @@ public class Party {
                 System.out.println("Ты еще мал " + party.get(i).getName() + ", тебе нельзя на тусовку");
             }
         }
+
         for (int i = 0; i < party.size(); i++) {
             if (!(party.get(i).getName().equals("Люба"))) {
                 System.out.println("Добро пожаловать, " + party.get(i).getName());

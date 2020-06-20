@@ -6,9 +6,22 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Person {
-    private String name;
+public class Person implements Comparable<Person>  {
+    public String name;
     private String surname;
-    private int age;
+    public int age;
 
+    @Override
+    public int compareTo(Person person) {
+
+           if (name.compareTo(person.name) != 0) {
+               return name.compareTo(person.name);
+           }
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "{" + name + " " + surname + " " + age + '}';
+    }
 }

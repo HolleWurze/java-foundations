@@ -5,20 +5,19 @@ import java.util.List;
 
 public class Party {
     public static void main(String[] args) {
-        Person linda = new Girls("Линда", "Люповски", 23);
-        Person nadya = new Girls("Надя", "Иванова", 17);
-        Person sasha = new Girls("Саша", "Красненко", 25);
-        Person rita = new Girls("Рита", "Попова", 18);
-        Person samanta = new Girls("Саманта", "Пирс", 24);
-        Person luba = new Girls("Люба", "Прохорова", 22);
+        Person linda = new Girl("Линда", "Люповски", 23);
+        Person nadya = new Girl("Надя", "Иванова", 17);
+        Person sasha = new Girl("Саша", "Красненко", 25);
+        Person rita = new Girl("Рита", "Попова", 18);
+        Person samanta = new Girl("Саманта", "Пирс", 24);
+        Person luba = new Girl("Люба", "Прохорова", 22);
 
-        Person frank = new Friends("Френк", "Люповски", 22);
-        Person dany = new Friends("Дэни", "Мазевски", 17);
-        Person greg = new Friends("Грэг", "Пинтович", 23);
-        Person andrey = new Friends("Андрей", "Макаревич", 21);
-        Person boris = new Friends("Борис", "Моисеев", 25);
-        Person nubagbva = new Friends("Нубагбва", "Осшоиш", 18);
-
+        Person frank = new Friend("Френк", "Люповски", 22);
+        Person dany = new Friend("Дэни", "Мазевски", 17);
+        Person greg = new Friend("Грэг", "Пинтович", 23);
+        Person andrey = new Friend("Андрей", "Макаревич", 21);
+        Person boris = new Friend("Борис", "Моисеев", 25);
+        Person nubagbva = new Friend("Нубагбва", "Осшоиш", 18);
 
         List<Person> party = new ArrayList<>();
         party.add(linda);
@@ -50,7 +49,8 @@ public class Party {
                 System.out.println("Эта тусовка не для тебя " + party.get(i).getName());
             }
         }
-
+        HWcomparator comparator = new HWcomparator();
+        System.out.println("comparator.compare(linda,dany) = " + comparator.compare(linda, dany));
     }
 }
 

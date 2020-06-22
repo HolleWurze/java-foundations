@@ -1,18 +1,19 @@
 package Training0806;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
+@AllArgsConstructor
 @Data
 public class Person implements Comparable<Person> {
-    private String name;
-    private String surname;
+    final private String name;
+    final private String surname;
     private int age;
 
     @Override
     public String toString() {
         return "{" + name + " " + surname + " " + age + '}';
     }
-
 
     @Override
     public int compareTo(Person person) {

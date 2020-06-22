@@ -4,16 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Comparator;
-
 @AllArgsConstructor
 @Getter
 @Setter
-
-public class Friends extends Person implements Comparator<Person> {
-    public String name;
+public class Friends extends Person  { //public class Friends extends Person
+    private String name;
     private String surname;
-    public int age;
+    private int age;
 
     @Override
     public String toString() {
@@ -22,8 +19,8 @@ public class Friends extends Person implements Comparator<Person> {
 
 
 
-    @Override
-    public int compare(Person o1, Person o2) {
-        return o1.compareTo(o2);
-    }
+//    @Override
+//    public int compare(Person o1, Person o2) {
+//        return o1.compareTo(o2);
+//    }
 }

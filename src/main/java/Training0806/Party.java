@@ -50,7 +50,7 @@ public class Party {
                 System.out.println("Эта тусовка не для тебя " + party.get(i).getName());
             }
         }
-        System.out.println(linda.compareTo(dany));
+
     }
 }
 

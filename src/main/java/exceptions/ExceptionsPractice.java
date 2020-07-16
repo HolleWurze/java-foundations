@@ -36,8 +36,6 @@ public class ExceptionsPractice {
 //        } catch (myException){
 //
 //        }
-
-
     }
 
     public static void excteptionMethod() throws Exception {

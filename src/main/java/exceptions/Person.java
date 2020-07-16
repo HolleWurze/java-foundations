@@ -10,5 +10,6 @@ public class Person {
             throw new hwMyException("Некоректный возраст!");
         }
         this.age = age;
+
     }
 }

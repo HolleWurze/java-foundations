@@ -1,5 +1,6 @@
 package exceptions;
 
+
 public class ExceptionsHw {
     public static void main(String[] args) {
 

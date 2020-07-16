@@ -1,0 +1,3 @@
+Privet 1 string in file
+Privet 2 string in file
+Privet 3 string in file
